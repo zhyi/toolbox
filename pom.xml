@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>zhyi</groupId>
+        <artifactId>base</artifactId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>zhyi.toolbox</groupId>
+    <artifactId>toolbox</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Toolbox</name>
+    <description>The parent project of Toolbox.</description>
+    <url>https://github.com/zhyi/toolbox</url>
+    <inceptionYear>2012</inceptionYear>
+    <scm>
+        <connection>scm:git:https://github.com/zhyi/toolbox.git</connection>
+        <developerConnection>scm:git:https://github.com/zhyi/toolbox.git</developerConnection>
+        <url>https://github.com/zhyi/toolbox</url>
+    </scm>
+    <modules>
+        <module>toolbox-spi</module>
+        <module>toolbox-gui</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>zhyi.toolbox</groupId>
+                <artifactId>toolbox-spi</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>zhyi.zse</groupId>
+                <artifactId>zse-swing</artifactId>
+                <version>1.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
